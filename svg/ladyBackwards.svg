@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="images" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332.5 616.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4c4037;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #798893;
+      }
+
+      .cls-3 {
+        fill: #845e4c;
+      }
+
+      .cls-4 {
+        fill: #a7bcc9;
+      }
+
+      .cls-5 {
+        fill: #e5c2aa;
+      }
+
+      .cls-6 {
+        fill: #efd6c5;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="158.14" y="537.31" width="50" height="45" rx="15.76" ry="15.76"/>
+  <rect class="cls-6" x="133.38" y="484.71" width="100" height="37.52" rx="17.55" ry="17.55" transform="translate(686.85 320.09) rotate(90)"/>
+  <rect class="cls-5" x="191.63" y="280.27" width="39.69" height="30.64" rx="14.41" ry="14.41" transform="translate(-14.31 10.78) rotate(-2.83)"/>
+  <rect class="cls-5" x="81.58" y="280.39" width="39.69" height="30.64" rx="14.41" ry="14.41" transform="translate(188.15 596.05) rotate(-177.17)"/>
+  <rect class="cls-1" x="106" y="537.44" width="50" height="45" rx="15.76" ry="15.76"/>
+  <rect class="cls-6" x="81.24" y="484.84" width="100" height="37.52" rx="17.55" ry="17.55" transform="translate(634.84 372.36) rotate(90)"/>
+  <rect class="cls-3" x="101" y="245.44" width="64.36" height="285" rx="31.18" ry="31.18"/>
+  <path class="cls-4" d="m132.09,149.34l-9.67,124.62c-1.01,13.02-13.54,22.92-27.84,22h0c-14.3-.92-25.18-12.32-24.16-25.34l9.67-124.62c1.01-13.02,13.54-22.92,27.84-22h0c14.3.92,25.18,12.32,24.16,25.34Z"/>
+  <rect class="cls-3" x="147.81" y="246.2" width="64.36" height="285" rx="31.18" ry="31.18"/>
+  <path class="cls-4" d="m180.26,149.34l9.67,124.62c1.01,13.02,13.54,22.92,27.84,22h0c14.3-.92,25.18-12.32,24.16-25.34l-9.67-124.62c-1.01-13.02-13.54-22.92-27.84-22h0c-14.3.92-25.18,12.32-24.16,25.34Z"/>
+  <path class="cls-2" d="m113.64,119h83.74c12.73,0,23.07,10.34,23.07,23.07v114.97c0,25.39-20.61,46-46,46h-37.62c-25.39,0-46-20.61-46-46v-115.24c0-12.59,10.22-22.81,22.81-22.81Z"/>
+  <rect class="cls-1" x="112" y="34.44" width="86" height="138" rx="43" ry="43"/>
+</svg>
