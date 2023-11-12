@@ -29,6 +29,14 @@ h3 {
   display: none;
 }
 
+/*BANNER*/
+.banner {
+  background-color: #d1e0f3; 
+  color: black;
+  text-align: center;
+  padding: 10px; /* Adjust the padding as needed */
+}
+
 /*MENU SCREEN*/
 
 .menu {
@@ -144,6 +152,10 @@ h3 {
   .buttons a, .menu-buttons a, .settings-buttons a {
     font-size: 30px;
   }
+  #deer {
+    top: 15vh;
+    width: 250px;;
+  }
   }
 
 @media (max-width: 540px) {
@@ -154,6 +166,11 @@ h3 {
   .buttons a, .menu-buttons a, .settings-buttons a {
     font-size: 20px;
     margin: 20px 5px 0px 5px;
+  }
+
+  #deer {
+    top: 17vh;
+    width: 250px;;
   }
 }
 

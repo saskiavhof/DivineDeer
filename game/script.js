@@ -1,43 +1,42 @@
-const sleepBtn = document.querySelector("#action-sleep");
+const petBtn = document.querySelector("#action-pet");
 const feedBtn = document.querySelector("#action-feed");
 const playBtn = document.querySelector("#action-play");
+
 const startBtn = document.querySelector("#action-menu-start-game");
 const settingsBtn = document.querySelector("#action-menu-settings");
 const settingsBackBtn = document.querySelector("#action-settings-back");
 const difHardBtn = document.querySelector("#action-settings-difficulty-hard");
 const difNormalBtn = document.querySelector("#action-settings-difficulty-normal");
 const difEasyBtn = document.querySelector("#action-settings-difficulty-easy");
-/*const nightModeOffBtn = document.querySelector("#nightmode-off");
-const nightModeOnBtn = document.querySelector("#nightmode-on");*/
-//
+
 //Constants for main bar
-const sleepHp = document.querySelector("#sleep-hp");
-const hungerHp = document.querySelector("#hunger-hp");
+const gentlenessHp = document.querySelector("#gentleness-hp");
+const energyHp = document.querySelector("#energy-hp");
 const playHp = document.querySelector("#play-hp");
 const scoreBar = document.querySelector("#score");
 //
 
 //Game settings
-const maxSleep = 300;
-const maxHunger = 300;
+const maxGentleness = 300;
+const maxEnergy = 300;
 const maxPlay = 300;
 //Game speed
 let day = 20;
 
 //New object
 function Tamagotchi() {
-  this.sleep = maxSleep;
-  this.hunger = maxHunger;
+  this.gentleness = maxGentleness;
+  this.energy = maxEnergy;
   this.play = maxPlay;
 }
 
 //Abilities
-Tamagotchi.prototype.actionSleep = function() {
-    this.sleep+=40 / (day * 2)
+Tamagotchi.prototype.actionPet = function() {
+    this.gentleness+=40 / (day * 2)
 };
 
-Tamagotchi.prototype.actionEat = function() {
-	this.hunger+=120 / (day * 2)
+Tamagotchi.prototype.actionFeed = function() {
+	this.energy+=120 / (day * 2)
 };
 
 Tamagotchi.prototype.actionPlay = function() {
@@ -45,24 +44,24 @@ Tamagotchi.prototype.actionPlay = function() {
 };
 
 Tamagotchi.prototype.tick = function() {
-    this.sleep--;
-    this.hunger-=3;
+    this.gentleness--;
+    this.energy-=3;
     this.play-=2;
 };
 
 let tmgch = new Tamagotchi();
-let sleepHpCount;
-let hungerHpCount;
+let gentlenessHpCount;
+let energyHpCount;
 let playHpCount;
 let score = 0;
 
 //Controllers
-sleepBtn.addEventListener("click", function() {
-	tmgch.actionSleep();
+petBtn.addEventListener("click", function() {
+	tmgch.actionPet();
 });
 
 feedBtn.addEventListener("click", function() {
-	tmgch.actionEat();
+	tmgch.actionFeed();
 });
 
 playBtn.addEventListener("click", function() {
@@ -122,8 +121,8 @@ function startGame() {
 	//Main function of tamagotchi
 	function core() {
 		//console.log(tmgch);
-		sleepHpCount = (tmgch.sleep / maxSleep * 100).toFixed(2);
-		hungerHpCount = (tmgch.hunger / maxHunger * 100).toFixed(2);
+		gentlenessHpCount = (tmgch.gentleness / maxGentleness * 100).toFixed(2);
+		energyHpCount = (tmgch.energy / maxEnergy * 100).toFixed(2);
 		playHpCount = (tmgch.play / maxPlay * 100).toFixed(2);
 
 		//Scores
@@ -131,22 +130,22 @@ function startGame() {
 		scoreBar.innerHTML = score;
 
 		//Death ability
-		if ((playHpCount <= 0) || (sleepHpCount <= 0) || (hungerHpCount <= 0)) {
+		if ((playHpCount <= 0) || (gentlenessHpCount <= 0) || (energyHpCount <= 0)) {
 			playHpCount = 0;
-			sleepHpCount = 0;
-			hungerHpCount = 0;
+			gentlenessHpCount = 0;
+			energyHpCount = 0;
 			clearInterval(coreUpdate);
 			alert('Your score: ' + score );
 		}
 
 		//Max health percentage (real)
 		//Little help for player
-		if (tmgch.sleep >= (maxSleep + (maxSleep / 100 * 20))) {
-			tmgch.sleep = maxSleep + (maxSleep / 100 * 20);
+		if (tmgch.gentleness >= (maxGentleness + (maxGentleness / 100 * 20))) {
+			tmgch.gentleness = maxGentleness + (maxGentleness / 100 * 20);
 		}
 
-		if (tmgch.hunger >= (maxHunger + (maxHunger / 100 * 20))) {
-			tmgch.hunger = maxHunger + (maxHunger / 100 * 20);
+		if (tmgch.energy >= (maxEnergy + (maxEnergy / 100 * 20))) {
+			tmgch.energy = maxEnergy + (maxEnergy / 100 * 20);
 		}
 
 		if (tmgch.play >= (maxPlay + (maxPlay / 100 * 20))) {
@@ -154,19 +153,19 @@ function startGame() {
 		}
 
 		//Max health percentage (for player)
-		if ((tmgch.sleep / maxSleep * 100) > 100) {
-			sleepHpCount = 100;
+		if ((tmgch.gentleness / maxGentleness * 100) > 100) {
+			gentlenessHpCount = 100;
 		}
-		if ((tmgch.hunger / maxHunger * 100) > 100) {
-			hungerHpCount = 100;
+		if ((tmgch.energy / maxEnergy * 100) > 100) {
+			energyHpCount = 100;
 		}
 		if ((tmgch.play / maxPlay * 100) > 100) {
 			playHpCount = 100;
 		}
 
 		//Show HP on screen
-		sleepHp.innerHTML = sleepHpCount;
-		hungerHp.innerHTML = hungerHpCount;
+		gentlenessHp.innerHTML = gentlenessHpCount;
+		energyHp.innerHTML = energyHpCount;
 		playHp.innerHTML = playHpCount;
 
 		//Remove HP every tick
