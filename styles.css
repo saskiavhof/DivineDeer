@@ -27,6 +27,16 @@ body {
     padding: 20px;
     text-align: center;
     z-index: 5;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#popup-title {
+    text-align: center;
+}
+
+#popup-content {
+    text-align: left;
 }
 
 .scene {
@@ -204,36 +214,52 @@ body {
     }
 
     .deer {
-        width: 250px;
-        top: 450px;
+        width: 150px;
+        top: 540px;
+    }
+
+    .ladyBowing {
+        width: 90px;
+        top: 520px;
+        left: 40%;
     }
 }
 
 @media (max-width: 600px) {
     .scene {
-        width: 70%; /* Further adjust the width proportionally */
-        height: 490px; /* Further adjust the height proportionally */
+        width: 70%;
+        height: 490px;
     }
 
     .todaji {
-        width: 320px; /* Further adjust the width proportionally */
+        width: 320px; 
     }
 
     .street {
-        width: 420px; /* Adjust the width proportionally */
+        width: 420px;
         top: 420px;
         transform: translateX(-50%) scaleY(1.6);
     }
 
     .sakuraLeft,
     .sakuraRight {
-        width: 220px; /* Further adjust the width proportionally */
+        width: 220px;
         top: 350px;
     }
 
     .deer {
-        width: 200px;
-        top: 500px;
+        width: 120px;
+        top: 575px;
+    }
+
+    .ladyBowing {
+        width: 70px;
+        top: 560px;
+    }
+
+    .senbei {
+        top: 520px;
+        width: 90px;
     }
 }
 
