@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -33,10 +36,13 @@ body {
 
 #popup-title {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
 }
 
 #popup-content {
     text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 
 .scene {
@@ -112,10 +118,18 @@ body {
 
 .deerFrame2 {
     position: absolute;
-    left: 88%;
-    top: 450px;
+    left: 68%;
+    top: 430px;
     width: 100px;
     z-index: 1;
+}
+
+.babyDeer {
+    position: absolute;
+    left: 68%;
+    top: 480px;
+    width: 80px;
+    z-index: 2;
 }
 
 .ladyBowing {

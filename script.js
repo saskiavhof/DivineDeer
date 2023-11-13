@@ -4,6 +4,7 @@ document.getElementById('shrine').style.cursor = 'pointer';
 document.getElementById('senbei').style.cursor = 'pointer';
 document.getElementById('takemikazuchi').style.cursor = 'pointer';
 document.getElementById('deer').style.cursor = 'pointer';
+document.getElementById('babyDeer').style.cursor = 'pointer';
 
 
 document.getElementById('todaji').addEventListener('click', function () {
@@ -24,6 +25,10 @@ document.getElementById('takemikazuchi').addEventListener('click', function () {
 
 document.getElementById('deer').addEventListener('click', function () {
     showPopupWithButton("Deer", "Aliquam tincidunt felis vel dui blandit, eget varius libero bibendum. Aenean sed dolor quis eros condimentum vehicula. Ut sagittis efficitur sapien, id suscipit dolor fringilla a. Integer accumsan libero non bibendum congue. Curabitur auctor tortor vel tellus feugiat, vitae congue libero cursus. Play a Tamagochi-style game and virtually feed, pet, and bow with a deer!");
+});
+
+document.getElementById('babyDeer').addEventListener('click', function () {
+    showPopup("Learned Behaviors", "In hac habitasse platea dictumst. Curabitur non condimentum erat. Vestibulum efficitur a odio vitae tincidunt. Integer fringilla sapien ac dui suscipit, vel laoreet justo auctor. Nam vehicula, ex sit amet viverra posuere, odio lectus lacinia justo, vel cursus risus urna nec enim.");
 });
 
 

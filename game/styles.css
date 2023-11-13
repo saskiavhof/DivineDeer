@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 ::selection {
   background-color: transparent;
@@ -15,13 +15,14 @@ body {
 }
 
 h1, h2 {
-  font-family: 'DM Mono', monospace;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+  font-weight: 700;
 }
 
 h3 {
   margin-top: 20px;
-  font-family: 'DM Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -34,6 +35,7 @@ h3 {
   background-color: #d1e0f3; 
   color: black;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
   padding: 10px; /* Adjust the padding as needed */
 }
 
@@ -70,19 +72,19 @@ h3 {
   display: inline-block;
   font-size: 30px;
   background-color: transparent;
-  border: 2px solid #131313;
+  border: 2px solid #444240;
   padding: 5px 10px;
   margin: 20px 20px 0px 20px;
   transition: background-color .1s, color .1s;
   text-decoration: none;
-  color: #131313;
+  color: #444240;
   font-weight: 300;
-  font-family: 'DM Mono', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 .settings-buttons a:hover {
-  background-color: #131313;
-  color: #fafafa;
+  background-color: #444240;
+  color: white;
 }
 
 .settings-buttons {
@@ -106,19 +108,19 @@ h3 {
   display: inline-block;
   font-size: 40px;
   background-color: transparent;
-  border: 2px solid #131313;
+  border: 2px solid #444240;
   padding: 10px 20px;
   margin: 100px 20px 0px 20px;
   transition: background-color .1s;
   text-decoration: none;
-  color: #131313;
+  color: #444240;
   font-weight: 300;
-  font-family: 'DM Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   transition: background-color .1s, color .1s;
 }
 
 .buttons a:hover, .menu-buttons a:hover {
-  background-color: #131313;
+  background-color: #444240;
   color: #fafafa;
 }
 
@@ -129,7 +131,7 @@ h3 {
 }
 
 .hp {
-  font-family: 'DM Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 30px;
   width: 100%;

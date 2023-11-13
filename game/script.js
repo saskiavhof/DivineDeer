@@ -16,6 +16,11 @@ const playHp = document.querySelector("#play-hp");
 const scoreBar = document.querySelector("#score");
 //
 
+//audio//
+const petSound = new Audio("petSound.m4a");
+const bowSound = new Audio("bowSound.m4a");
+const feedSound = new Audio("feedSound.m4a");
+
 //Game settings
 const maxGentleness = 300;
 const maxEnergy = 300;
@@ -58,14 +63,17 @@ let score = 0;
 //Controllers
 petBtn.addEventListener("click", function() {
 	tmgch.actionPet();
+	petSound.play();
 });
 
 feedBtn.addEventListener("click", function() {
 	tmgch.actionFeed();
+	feedSound.play();
 });
 
 playBtn.addEventListener("click", function() {
 	tmgch.actionPlay();
+	bowSound.play();
 });
 
 startBtn.addEventListener("click", function() {
