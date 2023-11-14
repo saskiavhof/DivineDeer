@@ -1,279 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+::selection {
+  background-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #DCFAAE; /* Grass color */
+  background-color: #DCFAAE;
+  transition: background-color .3s;
 }
 
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* White with 80% opacity */
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+  font-weight: 700;
 }
 
-.popup {
-    background-color: white;
-    border-radius: 30px;
-    padding: 20px;
-    text-align: center;
-    z-index: 5;
-    max-width: 80%;
-    margin: 0 auto;
+h3 {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-#popup-title {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
+.hide {
+  display: none;
 }
 
-#popup-content {
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
+/*BANNER*/
+.banner {
+  background-color: #d1e0f3; 
+  color: black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px; /* Adjust the padding as needed */
 }
 
-.scene {
-    position: relative;
-    width: 90%; /* You can adjust the width of the responsive box */
-    max-width: 4000px; /* Set a maximum width if needed */
-    /*min-width: 900px;*/
-    height: 700px; /* Fixed height for the scene */
-    /*background-color: white;*/
+/*MENU SCREEN*/
+
+.menu {
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
 }
 
 
-.sky {
-    position: absolute;
-    width: 100%;
-    /*min-width: 900px;*/
-    /*height: 250px; /* Fixed height for the sky */
-    height: 300px; /* Fixed height for the sky */
-    background-color: #D1E1F3; /* Sky color */
-    top: 0;
+#deer {
+  position: absolute;
+  left: 50%;
+  top: 15vh;
+  transform: translateX(-50%);
+  width: 300px;;
 }
 
-.todaji {
-    position: absolute;
-    left: 50%; 
-    transform: translateX(-50%); /* Center Todaji horizontally */
-    top: 200px;
-    width: 400px;
-    z-index: 1;
+/*SETTINGS SCREEN*/
+
+.settings {
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
 }
 
-.shrine {
-    position: absolute;
-    left: 60%;
-    top: 320px;
-    width: 150px;
-    z-index: 1;
+.settings-buttons a {
+  display: inline-block;
+  font-size: 30px;
+  background-color: transparent;
+  border: 2px solid #444240;
+  padding: 5px 10px;
+  margin: 20px 20px 0px 20px;
+  transition: background-color .1s, color .1s;
+  text-decoration: none;
+  color: #444240;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
-.senbei {
-    position: absolute;
-    left: 2%;
-    top: 520px;
-    width: 160px;
-    z-index: 3;
+.settings-buttons a:hover {
+  background-color: #444240;
+  color: white;
 }
 
-.deer {
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%);
-    top: 500px;
-    width: 200px;
-    z-index: 1;
+.settings-buttons {
+  width: 100%;
+  text-align: center;
 }
 
-.deerStanding {
-    position: absolute;
-    left: 38%;
-    top: 400px;
-    width: 50px;
-    z-index: 1;
+/*GAME SCREEN*/
+
+.tamagotchi {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50vh;
+  transform: translateY(-50%);
+  font-size: 80px;
+  text-align: center;
 }
 
-.deerFrame1 {
-    position: absolute;
-    left: 18%;
-    top: 490px;
-    width: 100px;
-    z-index: 1;
-    transform: scaleX(-1);
+.buttons a, .menu-buttons a {
+  display: inline-block;
+  font-size: 40px;
+  background-color: transparent;
+  border: 2px solid #444240;
+  padding: 10px 20px;
+  margin: 100px 20px 0px 20px;
+  transition: background-color .1s;
+  text-decoration: none;
+  color: #444240;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color .1s, color .1s;
 }
 
-.deerFrame2 {
-    position: absolute;
-    left: 68%;
-    top: 430px;
-    width: 100px;
-    z-index: 1;
+.buttons a:hover, .menu-buttons a:hover {
+  background-color: #444240;
+  color: #fafafa;
 }
 
-.babyDeer {
-    position: absolute;
-    left: 68%;
-    top: 480px;
-    width: 80px;
-    z-index: 2;
+.buttons, .menu-buttons {
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
 }
 
-.ladyBowing {
-    position: absolute;
-    left: 45%;
-    transform: translateX(-50%);
-    top: 470px;
-    width: 120px;
-    z-index: 1;
+.hp {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.ladyBackwards {
-    position: absolute;
-    left: 50%;
-    top: 400px;
-    height: 80px;
-    z-index: 1;
+.hp span {
+  font-weight: 500;
 }
 
-
-.street {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    top: 375px;
-    width: 530px;
-    z-index: 0;
+.hp p {
+  display: inline;
 }
 
-.sakuraLeft {
-    position: absolute;
-    left: 2%;
-    top: 200px;
-    width: 400px;
-    z-index: 2;
+@media (max-width: 860px) {
+  .hp {
+    font-size: 20px;
+  }
+  .buttons a, .menu-buttons a, .settings-buttons a {
+    font-size: 30px;
+  }
+  #deer {
+    top: 15vh;
+    width: 250px;;
+  }
+  }
+
+@media (max-width: 540px) {
+  .hp p {
+    font-size: 20px;
+    display: block;
+  }
+  .buttons a, .menu-buttons a, .settings-buttons a {
+    font-size: 20px;
+    margin: 20px 5px 0px 5px;
+  }
+
+  #deer {
+    top: 17vh;
+    width: 250px;;
+  }
 }
 
-.sakuraRight {
-    position: absolute;
-    right: 2%;
-    transform: scaleX(-1);
-    top: 200px;
-    width: 400px;
-    z-index: 2;
-}
+@media (max-width: 540px) {
+  .hp p {
+    font-size: 20px;
+    display: block;
+  }
+  .buttons a, .menu-buttons a, .settings-buttons a {
+    font-size: 20px;
+    margin: 20px 2px 0px 2px;
+  }
 
+  #deer {
+    top: 16vh;
+    width: 180px;;
+  }
 
-.takemikazuchi {
-    position: absolute;
-    right: 14%;
-    top: 50px;
-    width: 100px;
-    z-index: 1;
-    opacity: 0.8;
-}
-
-.cloudRight {
-    position: absolute;
-    right: 14%;
-    top: 100px;
-    width: 300px;
-    z-index: 1;
-    opacity: 0.7;
-}
-
-.cloudLeft {
-    position: absolute;
-    left: 8%;
-    top: 20px;
-    width: 300px;
-    z-index: 1;
-    transform: scaleX(-1);
-    opacity: 0.7;
-}
-
-@media (max-width: 900px) {
-    .scene {
-        width: 80%; /* Adjust the width proportionally */
-        height: 560px; /* Adjust the height proportionally */
-    }
-
-    .todaji {
-        width: 320px; /* Adjust the width proportionally */
-    }
-
-    .street {
-        width: 420px; /* Adjust the width proportionally */
-        top: 390px;
-        transform: translateX(-50%) scaleY(1.4);
-    }
-
-    .sakuraLeft,
-    .sakuraRight {
-        width: 320px; /* Adjust the width proportionally */
-        top: 270px;
-    }
-
-    .deer {
-        width: 150px;
-        top: 540px;
-    }
-
-    .ladyBowing {
-        width: 90px;
-        top: 520px;
-        left: 40%;
-    }
-}
-
-@media (max-width: 600px) {
-    .scene {
-        width: 70%;
-        height: 490px;
-    }
-
-    .todaji {
-        width: 320px; 
-    }
-
-    .street {
-        width: 420px;
-        top: 420px;
-        transform: translateX(-50%) scaleY(1.6);
-    }
-
-    .sakuraLeft,
-    .sakuraRight {
-        width: 220px;
-        top: 350px;
-    }
-
-    .deer {
-        width: 120px;
-        top: 575px;
-    }
-
-    .ladyBowing {
-        width: 70px;
-        top: 560px;
-    }
-
-    .senbei {
-        top: 520px;
-        width: 90px;
-    }
 }
 
