@@ -49,7 +49,7 @@ body {
     position: relative;
     width: 90%; /* You can adjust the width of the responsive box */
     max-width: 4000px; /* Set a maximum width if needed */
-    min-width: 900px;
+    /*min-width: 900px;*/
     height: 700px; /* Fixed height for the scene */
     /*background-color: white;*/
 }
@@ -58,7 +58,7 @@ body {
 .sky {
     position: absolute;
     width: 100%;
-    min-width: 900px;
+    /*min-width: 900px;*/
     /*height: 250px; /* Fixed height for the sky */
     height: 300px; /* Fixed height for the sky */
     background-color: #D1E1F3; /* Sky color */

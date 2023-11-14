@@ -8,11 +8,11 @@ document.getElementById('babyDeer').style.cursor = 'pointer';
 
 
 document.getElementById('todaji').addEventListener('click', function () {
-    showPopup("Buddhism", "The Todaji temple, lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies velit in urna feugiat, nec feugiat libero consequat. Fusce at sollicitudin sapien. Vivamus convallis, nisi sit amet ullamcorper aliquet, odio metus luctus urna, id bibendum orci odio nec libero.");
+    showPopup("Buddhism", "Todaji Temple is central to Nara Park, in the same way that Buddhism is central to the protection and history of the Nara deer. Although Shintoism came before Buddhism in Japan, they became intertwined over time. The “Deer Mandala of Kasuga Shrine” depicts the shinto story of Takemikazuchi on a white deer underneath a reflection of five buddhist deities. This showed that by the fouthteeth century, the fusion of Buddhism and Shinto led to the belief in Shinto ‘kami’ as manifestation of Buddhist deities. The deer’s divine nature was reasserted by the monks of the Kofuku-ji Buddhist temple in Nara, who considered killing one to be a crime punishable by death. Deer are also significant to buddhism as they symbolize Buddha’s first teachings and the act of receiving them. The Setting in Motion of the Wheel of the Dhamma Sutta (or Dhammacakkappavattana Sutta) recounts Buddha's first teachings in Deer Park, Samath, India. As Buddha spoke to five skeptics, a doe and a stag emerged from the forest and stood beside the dharma wheel, attentively listening.");
 });
 
 document.getElementById('shrine').addEventListener('click', function () {
-    showPopup("Shintoism", "Nullam vehicula justo ac massa fermentum, non euismod ante convallis. Nunc tristique eu metus vel condimentum. Morbi eu feugiat libero. Quisque ut hendrerit mi. Proin eget dui ac augue faucibus convallis.");
+    showPopup("Shintoism", "The indigenous spirituality of Japan, shintoism, regards animals as integral to the natural world and emphasizes a harmonious relationship between humans and nature. In Shinto beliefs, various animals are considered sacred or are tied to legends, such as foxes, koi fish, Japanese macaques, tanukis, and wild boars. Deer, in particular, are highly revered in Shintoism and are viewed as messengers of the gods in some parts of the country, including Nara.");
 });
 
 document.getElementById('senbei').addEventListener('click', function () {
@@ -20,17 +20,16 @@ document.getElementById('senbei').addEventListener('click', function () {
 });
 
 document.getElementById('takemikazuchi').addEventListener('click', function () {
-    showPopup("The Legend of Takemikazuchi", "In hac habitasse platea dictumst. Curabitur non condimentum erat. Vestibulum efficitur a odio vitae tincidunt. Integer fringilla sapien ac dui suscipit, vel laoreet justo auctor. Nam vehicula, ex sit amet viverra posuere, odio lectus lacinia justo, vel cursus risus urna nec enim.");
+    showPopup("The Legend of Takemikazuchi", "In the 6th century, Japanese mythology was chronicled in the Kojiki, an early record of myths and legends. Takemikazuchi, the Shinto god of thunder, swords, and sumo wrestling, was one of the prominent deities. By the 8th century, a legend emerged depicting Takemikazuchi riding into the city of Nara on a white deer, establishing the first Japanese Dynasty. This legend led to deer being revered as messengers of the gods in Nara.");
 });
 
 document.getElementById('deer').addEventListener('click', function () {
-    showPopupWithButton("Deer", "Aliquam tincidunt felis vel dui blandit, eget varius libero bibendum. Aenean sed dolor quis eros condimentum vehicula. Ut sagittis efficitur sapien, id suscipit dolor fringilla a. Integer accumsan libero non bibendum congue. Curabitur auctor tortor vel tellus feugiat, vitae congue libero cursus. Play a Tamagochi-style game and virtually feed, pet, and bow with a deer!");
+    showPopupWithButton("Deer", "Play a Tamagochi-style game and virtually feed, pet, and bow with a deer!                                                                                                                                                                                                                 ");
 });
 
 document.getElementById('babyDeer').addEventListener('click', function () {
-    showPopup("Learned Behaviors", "In hac habitasse platea dictumst. Curabitur non condimentum erat. Vestibulum efficitur a odio vitae tincidunt. Integer fringilla sapien ac dui suscipit, vel laoreet justo auctor. Nam vehicula, ex sit amet viverra posuere, odio lectus lacinia justo, vel cursus risus urna nec enim.");
+    showPopup("Learned Behaviors", "Nara Park has a unique custom of feeding specialized cookies to the park’s free ranging sika deer, who display a behavior similar to bowing to their feeders. Observations on these bowing behaviors found that it is a habit developed with age, and socially influenced by the behaviors of the surrounding deer.");
 });
-
 
 function showPopup(title, content) {
     document.getElementById('popup-title').innerText = title;
