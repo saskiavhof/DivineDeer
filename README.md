@@ -1,4 +1,5 @@
 # Divine Deer 
-Interactive website and tamagochi-style game
+This project involves the development of an interactive website centered around a clickable illustrated scene. When a user clicks on various interactive elements, the user is able to read from informational pop-ups that discuss various themes related to Nara Park, the characteristics of sika deer, and the surrounding culture. In addition to informative content, users can participate in a Tamagotchi-inspired game integrated into the site, accessible by clicking on the prominent deer within the scene. The style being a nod to the Japanese origins of the Tamagotchi game, users are able to interact with the deer digitally by feeding, petting, and bowing with the deer, mimicking the way that visitors of Nara Park are able to interact with these unique wild animals.
 
-In progress, set to finish 12/1/2023!
+The primary goal of this project is to investigate the convergence of wild nature and human civilization. Through analysis and commentary, the writing attached to the website aims to shed light on distinctive behaviors and traditions emerging from the dynamic interaction between humans and the deer that exist in this unique sphere. Special emphasis is placed on examining the deer in Nara Park as a subset of “temple animals”, thereby contributing to a deeper understanding of the symbiotic relationship between wildlife and cultural practices.
+
