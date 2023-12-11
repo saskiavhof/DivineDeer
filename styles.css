@@ -47,28 +47,24 @@ body {
 
 .scene {
     position: relative;
-    width: 90%; /* You can adjust the width of the responsive box */
-    max-width: 4000px; /* Set a maximum width if needed */
-    /*min-width: 900px;*/
-    height: 700px; /* Fixed height for the scene */
-    /*background-color: white;*/
+    width: 90%;
+    max-width: 4000px; 
+    height: 700px;
 }
 
 
 .sky {
     position: absolute;
     width: 100%;
-    /*min-width: 900px;*/
-    /*height: 250px; /* Fixed height for the sky */
-    height: 300px; /* Fixed height for the sky */
-    background-color: #D1E1F3; /* Sky color */
+    height: 300px;
+    background-color: #D1E1F3;
     top: 0;
 }
 
 .todaji {
     position: absolute;
     left: 50%; 
-    transform: translateX(-50%); /* Center Todaji horizontally */
+    transform: translateX(-50%);
     top: 200px;
     width: 400px;
     z-index: 1;
@@ -153,7 +149,7 @@ body {
 .street {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translateX(-50%);
     top: 375px;
     width: 530px;
     z-index: 0;
@@ -207,23 +203,23 @@ body {
 
 @media (max-width: 900px) {
     .scene {
-        width: 80%; /* Adjust the width proportionally */
-        height: 560px; /* Adjust the height proportionally */
+        width: 80%;
+        height: 560px;
     }
 
     .todaji {
-        width: 320px; /* Adjust the width proportionally */
+        width: 320px;
     }
 
     .street {
-        width: 420px; /* Adjust the width proportionally */
+        width: 420px;
         top: 390px;
         transform: translateX(-50%) scaleY(1.4);
     }
 
     .sakuraLeft,
     .sakuraRight {
-        width: 320px; /* Adjust the width proportionally */
+        width: 320px;
         top: 270px;
     }
 
